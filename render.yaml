@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: bot-resamania
+    env: python
+    buildCommand: "pip install -r requirements.txt && playwright install chromium --with-deps"
+    startCommand: "python app.py"
